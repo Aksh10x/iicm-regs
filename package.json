@@ -1,0 +1,20 @@
+{
+  "name": "iicm-registration",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test tests/api.test.mjs",
+    "test:browser": "NODE_PATH=$(npm root -g):$(npm root -g)/@playwright/cli/node_modules node tests/browser.mjs",
+    "resend": "node --env-file-if-exists=.env scripts/resend.js",
+    "export": "node --env-file-if-exists=.env scripts/export.js",
+    "test-mail": "node --env-file-if-exists=.env scripts/test-mail.js"
+  },
+  "dependencies": {
+    "mongodb": "6.21.0",
+    "nodemailer": "10.0.15"
+  }
+}

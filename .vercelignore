@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+exports/
+node_modules/
+public/
+# local-only: if uploaded, Vercel runs server.js as the whole app instead of api/ + static files
+server.js
+scripts/
+tests/
+tools/
+docs/
+Code.gs
