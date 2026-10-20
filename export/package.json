@@ -1,0 +1,17 @@
+{
+  "name": "iicm-regs-export",
+  "private": true,
+  "type": "module",
+  "description": "Password-protected download of IICM 9.0 registrations: event-wise Excel, PDF and CSV in an AES-encrypted zip",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "sample": "node scripts/sample.js"
+  },
+  "dependencies": {
+    "@zip.js/zip.js": "2.22.0",
+    "exceljs": "4.4.0",
+    "mongodb": "6.21.0",
+    "pdfmake": "0.2.23"
+  }
+}
